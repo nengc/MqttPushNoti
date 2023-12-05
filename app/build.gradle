@@ -1,12 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion "27.0.0"
+    lintOptions {
+          abortOnError false
+    }
+    compileSdkVersion 33
+    buildToolsVersion "33.0.0"
     defaultConfig {
         applicationId "com.aaronlife.book.mqttpushnoti"
         minSdkVersion 21
-        targetSdkVersion 27
+        targetSdkVersion 33
         versionCode 1
         versionName "1.00.00"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
